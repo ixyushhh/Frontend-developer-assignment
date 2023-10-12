@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,800;1,9..40,500;1,9..40,800&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root{
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #1E0E62;
+    --outer-btn-color: #E93A7D;
+    --accent-color: #1DA1F2;
+    --accent-color-dark: #482BE7;
+} 
+
+body{
+    background-color: #2F1893;
+}
+
+.container{
+    width: 100%;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+/* Nav bar -->> */
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 972px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.logo{
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.outer-btn{
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--outer-btn-color);
+    color: var(--primary-text-color);
+}
+
+/* Main section -->>  */
+.main-section{
+    width: 972px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.left-section{
+    Width: 427px;
+    Height: 496px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-section h1{
+    margin-top: 60px;
+    color: var(--primary-text-color);
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: -1;
+}
+
+.left-section p{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+}
+
+
+.right-section{
+    border: 2px solid #EBEAED;
+    Width: 400px;
+    height: 460px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-text-color);
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+/* Form Header -->>  */
+.signup-header h1{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 52px;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+/* Form Body -->>  */
+.signup-body p input{
+    width: 320px;
+    height: 50px;
+    border: 2px solid #EBEAED;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.signup-body p{
+    text-align: center;
+}
+
+.signup-body{
+    position: relative;  /*POSITIONING */
+}
+
+.para{
+    margin-bottom: 15px;
+    color: grey;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.para i{
+    color: var(--secondary-text-color);
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #25DAC5;
+}
+
+.para[id="1"]{
+    text-align: left;
+} 
+
+hr{
+    position: relative;
+    top: -10px;
+    color: #EBEAED;
+    margin: 10px;
+    opacity: 60%;
+}
+
+.ordesign{
+    color: grey;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    top: 224px;
+    left: 145px;
+    background-color: white;
+    padding: 0px 8px;
+}
+
+.signup-body p input[id="1"]{
+    background-color: var(--accent-color-dark);
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 0px;
+}
+
+.signup-body p input[id="2"]{
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 0px;
+}
+
+/* // Signup Footer -->> */
+.signup-footer p{
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.signup-footer p a{
+    color: #25DAC5;
+    font-weight: 500;
+    text-decoration: none;
+}
